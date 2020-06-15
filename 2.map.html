@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map|Reduce|Filter - Javascript </title>
+<style type="text/css">
+body {
+    font-family: 'Roboto',sans-serif;
+    text-rendering: optimizeLegibility;
+    color: rgba(0,0,0,.84);
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.58;
+    background-color: aliceblue;
+
+}
+#bod{
+	 font-size: 22px;
+
+}
+.showme {
+  display: none;
+}
+
+.showhim:hover .showme {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+
+<center id="bod"><h2>Javascript|Functions</h2></center><br><br>
+<div class="showhim"><h3> 1) Array map() Method</h3>
+  <div class="showme"> <p>The <strong>map()</strong> method in JavaScript creates an array by calling a specific function on each element present in the parent array. It is a non-mutating method.<br> Generally <strong>map()</strong> method is used to iterate over an array and calling function on every element of array.<br>
+<strong>Syntax:</strong></p><pre>array.map(function(currentValue, index, arr), thisValue)</pre>
+<p><strong>Parameters:</strong> This method accepts two parameters as mentioned above and described below:</p>
+<ul>
+<li><strong>function(currentValue, index, arr):</strong> It is required parameter and it runs on each element of array. It contains three parameters which are listed below:
+<ul>
+<li><strong>currentValue:</strong> It is required parameter and it holds the value of current element.</li>
+<li><strong>index:</strong> It is optional parameter and it holds the index of current element.</li>
+<li><strong>arr:</strong> It is optional parameter and it holds the array.</li>
+</ul>
+</li>
+<li><strong>thisValue:</strong> It is optional parameter and used to hold the value of passed to the function.</li>
+</ul><p><strong>Return Value:</strong> It returns a new array and elements of arrays are result of callback function.</p>
+<br></div>
+</div>
+
+<div class="showhim"><h3>2) Array reduce() Method</h3>
+	<div class="showme"><p>The array
+ <strong>reduce() method</strong> 
+in JavaScript is used to reduce the array to a single value and executes a provided function for each value of the array (from left-to-right) and the return value of the function is stored in an accumulator.</p>
+<p><strong>Syntax: </strong>
+</p>
+<pre>array.reduce( function(total, currentValue, currentIndex, arr), initialValue )</pre>
+<ul>
+<li><strong>function(total, currentValue, index, arr):</strong> It is the required parameter and used to run for each element of array. It contains four parameter which are listed below:
+<ul>
+<li><strong>total:</strong> It is required parameter and used to specify the initialValue, or the previously returned value of the function.</li>
+<li><strong>currentValue:</strong> It is required parameter and used to specify the value of the current element.</li>
+<li><strong>currentIndex:</strong> It is optional parameter and used to specify the array index of the current element.</li>
+<li><strong>arr:</strong> It is optional parameter and used to specify the array object the current element belongs to.</li>
+</ul>
+</li>
+<li><strong>initialValue:</strong> It is optional parameter and used to specify the value to be passed to the function as the initial value.</li>
+</ul>
+</div>
+
+<div class="showhim"><h3>3) Array Filter() Method</h3>
+<div class="showme"><p><b>arr.filter()</b> function is used to create a new array from a given array consisting of only those elements from the given array which satisfy a condition set by the argument function. The syntax of the given function is as follows:</p>
+<pre><b>var newArray = arr.filter(arg_function[, this_arg])</b>
+</pre>
+<p>Here arr is the original given array.</p>
+<p><b>Argument</b><br>
+The argument to this function is another function that defines the condition to be checked for each element of the array. This arg_function itself takes three arguments:</p>
+<ul>
+<li>array </li><p>This is the array on which the <i>.filter()</i> function was called.</p>
+<li>index </li><p>This is the index of the current element being processed by the function.</p>
+<li>element</li><p>This is the current element being processed by the function.
+</p></ul><p>Another argument <b>this_arg</b> is used to tell the function to use this value when executing argument function.</p></div>
+
+
+
+
+</body>
+</html>

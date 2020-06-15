@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Time ticking</title>
+<style type="text/css">
+body{
+	font-size: 50px;
+	color: white;
+	background-color: black;
+	text-align: center;
+	}
+ma{
+	font-size: 05px;
+	color: white;
+}
+</style>
+<marquee loop="1" scrollamount="12">Ticking Time</marquee><center><script type="text/javascript"> 
+function one(){
+var refresh=1000;
+mytime=setTimeout('two()',refresh)
+}
+
+function two() {
+var t = new Date()
+var e =t.toLocaleTimeString([], { hour12: true});
+
+document.getElementById('sty').innerHTML = e;
+
+one();
+ }
+
+</script></center>
+<body onload=two();>
+<span id='sty' ></span>
+
+
+</body>
+</html>

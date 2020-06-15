@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head></head>
+<body > 
+    <center>  <p id="UP" style="font-size: 24px; 
+       color:red;    font-weight: bold;"> 
+   </p> 
+   <button onclick="Run()"> 
+      <h3>click here </h3>
+   </button> 
+   <p id="DOWN" style="color:green; 
+                     font-size: 24px; 
+                     font-weight: bold;"> 
+   </p> </center>
+   
+   <script> 
+      var el = document.getElementById("UP"); 
+      var els = document.getElementById("DOWN"); 
+            var expression = 
+/(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi; 
+      
+      var regex = new RegExp(expression); 
+      var url = 'http://sorcfhf.org'; 
+      el.innerHTML = "URL = '" + url + "'"; 
+
+      function Run() { 
+         var res = ""; 
+         if (url.match(regex)) { 
+            res = "True"; 
+         } else { 
+            res = "False"; 
+         } 
+         els.innerHTML = res; 
+      } 
+   </script> 
+   </body>
+
+ 
+</html>
